@@ -1,12 +1,23 @@
-import {Util} from './util.js';
+import { Util } from './util.js';
 
-import {Framework} from './framework.js';
+import { Framework } from './framework.js';
 
 export class Boostlet {
 
   constructor() {
 
     this.framework = null;
+
+    this.categories = ["Machine Learning", "LLM", "Filters", "Data Visualisation", "user interaction"];
+
+    this.examples = new Map();
+    this.examples.set("Machine Learning", ["SAM", "Melonoma"]);
+    this.examples.set("LLM", ["ImageCaptioning"]);
+    this.examples.set("Filters", ["Sobel", "Trako"]);
+    this.examples.set("Data Visualisation", ["Plotly"]);
+    this.examples.set("user interaction", ["LLM chat"]);
+
+
 
   }
 
@@ -37,7 +48,7 @@ export class Boostlet {
     if (this.framework) {
 
       console.log('Found', this.framework, '!')
-    
+
     } else {
 
       throw "Framework Not Found.";
