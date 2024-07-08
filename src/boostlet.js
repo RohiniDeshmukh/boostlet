@@ -8,16 +8,14 @@ export class Boostlet {
 
     this.framework = null;
 
-    this.categories = ["Machine Learning", "LLM", "Filters", "Data Visualisation", "user interaction"];
+    this.categories = ["Machine Learning", "LLM", "Filters", "Data Visualisation"];
 
     this.examples = new Map();
     this.examples.set("Machine Learning", ["SAM", "Melonoma"]);
     this.examples.set("LLM", ["ImageCaptioning"]);
     this.examples.set("Filters", ["Sobel", "Trako"]);
     this.examples.set("Data Visualisation", ["Plotly"]);
-    this.examples.set("user interaction", ["LLM chat"]);
-
-
+ 
 
   }
 
