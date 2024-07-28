@@ -11,7 +11,7 @@ export class Boostlet {
     this.categories = ["Machine Learning", "LLM", "Filters", "Data Visualisation"];
 
     this.examples = new Map();
-    this.examples.set("Machine Learning", ["SAM", "Melonoma"]);
+    this.examples.set("Machine Learning", ["Segmentanything", "Melonoma"]);
     this.examples.set("LLM", ["ImageCaptioning"]);
     this.examples.set("Filters", ["Sobel", "Trako"]);
     this.examples.set("Data Visualisation", ["Plotly"]);
